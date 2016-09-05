@@ -1,2 +1,2 @@
 # TPE
-Tpe de si je Jules, Luc, et Guillaume
+TPE de SI de Jules, Luc, et Guillaume
