@@ -1,0 +1,30 @@
+Si ça ne vous gêne pas je pense que la cryptographie est un super sujet de TPE, et on peut aboutir sur plein d'autres domaines interressants.
+
+(partie histoire)
+
+-On peut parler de la machine de turing, qui pendant la seconde guerre mondiale à réussi a décrypter les messages nazis et a gagner la guerre.
+Cette machine est magnifiquement bien réalisée. Elle est composée de plusieurs rotors que on pourra imprimer en 3D pour faire une démonstration.
+Au début, la machine devait tester plus de 20 millions de combinaisons pour décrypter les messages, et le temps de calcul était trop grand, en 
+sachant que la clé de décryptage changeait toute les 24h. Donc, tout les soirs à minuit, si la machine n'avait pas fini son calcul, il fallait tout
+reprendre de zéro. Ensuite Alan Turing décide d'ajouter des rotors bien foutus(je me souvient plus exactement comment ca marche), mais cette
+amélioration a permi de diminuer le nombre de cacluls de 20 millions à juste 500. Et le temps de calcul est lui aussi abaissé à 45min.
+Ils ont donc pu décoder les messages nazis sans qu'ils ne le sachent, et programmer des attaques surprises.
+
+(partie programmation)
+
+On peut donc continuer dans la lignée de la cryptographie, et programmer des petits codes simulant la cryptographie d'un message. La cryptograpphie 
+moderne (qu'utilise la CIA) utilise les nombres premiers pour trouver des clés ne comportant pas beaucoup de diviseurs, et permet de rendre
+presque impossible de décryptage sans clé. On peut donc aussi parler du plus grand nombre premier(très long...), et des concours organisés
+pour en trouver d'encore plus grands. Je viens de coder un programme en C ou Java, ou python( on s'adaptera), qui calcule tout les nombres premiers
+et les liste par ordre croissant. On peut donc démontrer que justement le temps de calcul est long pour trouver des nombres premiers très grands.
+Ensuite, en utilisant ces méthodes, on codera deux codes ou trois, qui communiqueront ensemble(soit par internet, soit en LAN), et qui s'échangeront
+des messages cryptés. Le 3ème programme essayera d'intercepter le message sans connaitre la clé, et on verra que le décryptage est impossible.
+
+(partie physique)
+
+Ensuite, depuis les années 1950, après la découverte de la physique quantique, une nouvelle forme de cryptographie à émergé : la cryptographie
+quantique. Elle utilise les propriétés inprévisibles de cette physique pour générer des clés random et rendre le message quasi-indécryptable.
+La c'est plutot compliqué et je m'y connais pas trop dsl donc faudra qu'on fasse masse de recherche, mais je vois de quoi ca parle dans les
+grandes lignes.
+
+Voilà, les idées que j'ai eu. J'espère que vous allez accrocher sinon je vous jette d'un pont...
