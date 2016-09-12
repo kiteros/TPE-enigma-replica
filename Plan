@@ -1,0 +1,10 @@
+Plan du TPE
+  
+  La place de la crytographie de nos jours:
+  -Besoin de cryptage des données personnelles, cartes bleues, données secrètes.
+  -Type de cryptogrpahie utilisés de nos jours : 
+    -Cryptogrpahie quantique -> Expliquer son fonctionnement
+                             -> Essayer de la simuler avec des valeurs aléatoires au lieu de phénomènes quantiques                          
+    -Cryptographie par nombres premiers -> Plus grand nombre premier de nos jours
+                                        -> Créer un programme pour montrer à quel point c'est difficile de générer des premiers plutot grands
+                                        
