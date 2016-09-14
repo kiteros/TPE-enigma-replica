@@ -38,6 +38,7 @@
       ?>
       <script>
       message = S_GET('text');
+      var cle_ = 0;
       alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
       swal({
         title: 'Entrez la clé de décryptage pour ce message:' + message,
@@ -46,6 +47,7 @@
         inputValidator: function(value) {
           return new Promise(function(resolve, reject) {
             if (value) {
+              cle_ = value;
               resolve();
             } else {
               reject('LA clé ne peut pas être vide');
@@ -55,9 +57,9 @@
         }).then(function(result) {
         swal({
           type: 'success',
-          html: 'You entered: ' + result
+          html: 'message décrypté: ' + decrypt(cle_)
         });
-        decrypt(1);
+
       })
 
       function S_GET(id){
@@ -68,12 +70,12 @@
       function decrypt(cle){
         decrypted = '';
         tabMessage = message.split('');
+        cle = 26 - (cle % 26);
         for (i = 1; i < tabMessage.length; i++) {
           var pos = alphabet.indexOf(tabMessage[i]);
-          var newPos = (pos - cle) % 26;
-          decrypted += alphabet[newPos-1];
+          var newPos = (pos + cle) % 26;
+          decrypted += alphabet[newPos];
         }
-        alert(decrypted);
         return decrypted;
       }
 
