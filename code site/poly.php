@@ -23,7 +23,7 @@
       <?php
       try
       {
-        $bdd = new PDO('mysql:host=localhost;dbname=crypt;charset=utf8', 'root', '');
+        $bdd = new PDO('mysql:host=mysql.hostinger.fr;dbname=u678318874_crypt;charset=utf8', 'u678318874_jules', 'juju101970');
       }
       catch(Exception $e)
       {
@@ -72,9 +72,14 @@
         tabMessage = message.split('');
         cle = 26 - (cle % 26);
         for (i = 1; i < tabMessage.length; i++) {
-          var pos = alphabet.indexOf(tabMessage[i]);
-          var newPos = (pos + cle) % 26;
-          decrypted += alphabet[newPos];
+          if(tabMessage[i] == ' '){
+            decrypted += ' ';
+          }else{
+            var pos = alphabet.indexOf(tabMessage[i]);
+            var newPos = (pos + cle) % 26;
+            decrypted += alphabet[newPos];
+          }
+
         }
         return decrypted;
       }
@@ -133,7 +138,7 @@
         ?>
         <p>
         <form action="?mess=<?php echo $messageDon['id'];?>&text=<?php echo $messageDon['message'];?>" method="post">
-           <?php echo "--> " . $messageDon['message'] . "<span> écrit le " . $messageDon['date_'] . "</span>"?>;
+           <?php echo "--> " . $messageDon['message'] . "<span> écrit le " . $messageDon['date_'] . "</span>";?>
            <input type="hidden" value="<?php echo $messageDon['id'];?>"/>
           <input type="submit" value="Décrypter" class="voirPlusSmall"/>
         </form></p>

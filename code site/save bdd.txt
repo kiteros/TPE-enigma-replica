@@ -1,0 +1,8 @@
+try
+      {
+        $bdd = new PDO('mysql:host=mysql.hostinger.fr;dbname=u678318874_crypt;charset=utf8', 'u678318874_jules', 'juju101970');
+      }
+      catch(Exception $e)
+      {
+              die('Erreur : '.$e->getMessage());
+      }
