@@ -1,9 +1,7 @@
-#!/usr/bin/env python
-# -*- coding: latin-1 -*-
 import time
 from math import sqrt
  
-#J'utilise psycho pour plus de rapiditÈ
+#J'utilise psycho pour plus de rapidit√©
 if __name__ == '__main__':
     # Import Psyco if available
     try:
@@ -13,9 +11,11 @@ if __name__ == '__main__':
         pass
  
 listep=[2,3]
+newlistep=[]
 n_a_tester=5
-print ("\n*** PREM'S a0.10 ***\n")
-limite=int(input("Calculer jusqu'‡ : "))
+print ("\n*** PREM'S V 1.0 ***\n")
+limite=int(input("Calculer jusqu'√† : "))
+print()
 a=3
  
 def test (n_a_tester):
@@ -39,11 +39,17 @@ finish=time.ctime()
 debut=(int(start[11]+start[12])*3600)+(int((start[14]+start[15]))*60)+int(start[17]+start[18])
 fin=(int(finish[11]+finish[12])*3600)+(int((finish[14]+finish[15]))*60)+int(finish[17]+finish[18])
 temps=fin-debut
-# On Ècrit les nombres P
+
+for i in range(5):
+    newlistep.append(listep[len(listep)-i-1])
+newlistep.reverse()
+# On √©crit les nombres P
 nombre_prems=len(listep)
 nombre_prems=str(nombre_prems)
-print("temps du calcul : environ",temps,"sec")
-print("nombre de NP trouvÈs :", nombre_prems)
-print(str(listep))
-
-print ("…criture terminÈe, fin du programme \n")
+print("\nTemps du calcul : environ",temps,"sec")
+print("\nNombre de NP trouv√©s :", nombre_prems)
+print('\nVoici les 5 derniers :\n')
+for i in range(5):
+    print('-',newlistep[i])
+print()
+print ("√âcriture termin√©e, fin du programme (pour voir la liste compl√®te des NP, tapez 'listep', puis valider)\n")
