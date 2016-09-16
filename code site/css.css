@@ -1,6 +1,7 @@
 body
 {
-  background-color: gray;
+  background-image: url('res/giphy.gif');
+  background-size: cover;
 }
 
 span
@@ -11,6 +12,20 @@ span
 h2, h3{
   color : black;
   font-family: sans-serif;
+}
+
+.conteneur
+{
+  display: flex;
+  justify-content: center;
+}
+
+.left{
+  border-right : 1px solid white;
+}
+
+.right{
+  border-left: 1px solid white;
 }
 
 .voirPlusSmall

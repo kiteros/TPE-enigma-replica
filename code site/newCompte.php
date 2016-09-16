@@ -45,20 +45,19 @@
             'nom' => $_POST['name'],
             'psw' => sha1($_POST['pw1'])
           ));
-
+          session_start();
+          $_SESSION['nom'] = $_POST['name'];
           header('Location: crypt.php');
           exit();
         }else{
           //erreur psw
 
           echo '<center>Les mots de passe ne correspondent pas</center>';
-          exit();
+
         }
       }else{
         //tout les champs ne sont pas remplis.
         echo '<center>Tout les champs ne sont pas remplis</center>';
-        header('Location: #?error=missing');
-        exit();
       }
     ?>
 </html>

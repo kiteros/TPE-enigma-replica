@@ -19,17 +19,21 @@
       $nbFound = $searchUser->rowCount();
       if($nbFound >= 1){
         //User existe
-        $_SESSION['name'] = $_POST['name'];
+        session_start();
+        $_SESSION['nom'] = $_POST['username'];
+
         header('Location: crypt.php');
+
       }
-      echo 'coucou';
+
     }else if($_GET['method'] == 'invit'){
       //invit
       session_start();
-      $_SESSION['name'] = 'anonymous';
+      $_SESSION['nom'] = 'anonymous';
+
       //On passe directement au choix du type de cryptage :
       header('Location: crypt.php');
-      exit;
+
     }else{
       echo 'error';
     }
