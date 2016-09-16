@@ -1,0 +1,8 @@
+try
+      {
+        $bdd = new PDO('mysql:host=charentemessages.mysql.db;dbname=charentemessages;charset=utf8', 'charentemessages', 'Virtule2');
+      }
+      catch(Exception $e)
+      {
+              die('Erreur : '.$e->getMessage());
+      }

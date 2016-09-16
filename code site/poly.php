@@ -23,7 +23,7 @@
       <?php
       try
       {
-        $bdd = new PDO('mysql:host=mysql.hostinger.fr;dbname=u678318874_crypt;charset=utf8', 'u678318874_jules', 'juju101970');
+        $bdd = new PDO('mysql:host=charentemessages.mysql.db;dbname=charentemessages;charset=utf8', 'charentemessages', 'Virtule2');
       }
       catch(Exception $e)
       {
