@@ -1,6 +1,6 @@
 Plan du TPE sur la cryptographie :
 
-Problèmatique : pourquoi la cryptographie est-elle nécessaire, et comment a-t-elle évoluée ?
+Problèmatique : pourquoi la cryptographie est-elle nécessaire, et comment a-t-elle évoluée ? 
 
 I-La cryptographie de nos jours et sa nécéssité
 	1-Besoin de protection des données personnelles
@@ -8,9 +8,8 @@ I-La cryptographie de nos jours et sa nécéssité
 		-Envoyer des messages que personne ne peut intercepter et lire. Permet de garder des 		donées confidentielles
 
 II-La cryptographie au fil de l'histoire
-	-L'evolution au fil d temps
-
-
+	1-les chiffres de cesar
+	2-
 III-Les meilleures techniques de chiffrement
 	-Classement des techniques de la moins efficace à la plus efficace.
 	-Ici est mit en place une mise en scène avec Bob, Alice et Eve, puisqu'on est trois, avec un 	crypteur (envoyeyr), un décrypteur (destinataire),et un hackeur qui tente d'intercepter le 	message et de le décrypter à l'aide d'un programme.
@@ -26,4 +25,4 @@ III-Les meilleures techniques de chiffrement
 	4-Cryptographie quantique
 		-Evolution de cette technique et explication détaillée.
 		-Simulation sur ordinateur à l'aide d'un programme graphique des paramètres aléatoires qui caractérisent cette technique de cryptage.
-		-Test d'envoi de message crypté avec le site, décryptage et interseption.
+		-Test d'envoi de message crypté avec le site, décryptage et interception.
