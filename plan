@@ -1,0 +1,29 @@
+Plan du TPE sur la cryptographie :
+
+Problèmatique : pourquoi la cryptographie est-elle nécessaire, et comment a-t-elle évoluée ?
+
+I-La cryptographie de nos jours et sa nécéssité
+	1-Besoin de protection des données personnelles
+	2-Besoin d'envoyer des messages chiffrés
+		-Envoyer des messages que personne ne peut intercepter et lire. Permet de garder des 		donées confidentielles
+
+II-La cryptographie au fil de l'histoire
+	-L'evolution au fil d temps
+
+
+III-Les meilleures techniques de chiffrement
+	-Classement des techniques de la moins efficace à la plus efficace.
+	-Ici est mit en place une mise en scène avec Bob, Alice et Eve, puisqu'on est trois, avec un 	crypteur (envoyeyr), un décrypteur (destinataire),et un hackeur qui tente d'intercepter le 	message et de le décrypter à l'aide d'un programme.
+	1-chiffrement polyalphabétique:
+		-Hisoire de la technique
+		-Démonstration de cryptage grâce au site, et décryptage en quelques secondes grâce 		au programme de décryptage.
+	2-Machine Enigma
+		-Contexte de la guerre mondiale
+		-Reconstitution de la machine avec une imprimante 3D, et simulation avec arduino 		relié à un ordinateur. Démonstration de chiffrement et essai de décryptage. 			Conclusion sur le fait que c'est très difficile à déchiffer, mais calcul et explication de 		la manière a procéder avec nombre de combinaisons possibles. Eventuellement relié 		au site...
+	3-Chiffrement RSA
+		-Contexte et histoire
+		-Test de cryptage avec nombres premiers (multiplication de deux grands nombres), sur le site, et explication de l'utilité des nombres premiers dans ce système (le plus grand nombre premier à nos jours), et démonstration d'un programme calculant des nombres premiers plutot grands. En utilisant les nombres générés, test de chiffrement et tentative de décryptage avec un programme. Conclusion sur le fait que le temps de calcul est trop élevé et montrer que cette technique est sécurisée
+	4-Cryptographie quantique
+		-Evolution de cette technique et explication détaillée.
+		-Simulation sur ordinateur à l'aide d'un programme graphique des paramètres aléatoires qui caractérisent cette technique de cryptage.
+		-Test d'envoi de message crypté avec le site, décryptage et interseption.
