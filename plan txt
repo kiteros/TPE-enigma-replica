@@ -4,21 +4,30 @@ Problèmatique : pourquoi la cryptographie est-elle nécessaire, et comment a-t-
 
 I-La cryptographie de nos jours et sa nécéssité
 	1-Besoin de protection des données personnelles
-	2-Besoin d'envoyer des messages chiffrés
-		-Envoyer des messages que personne ne peut intercepter et lire. Permet de garder des 		donées confidentielles
+		-Pourquoi tout cacher quand ont à rien à cacher, si on a une vie banale
+		-La valeur de nos données personnelles, et les grandes entreprises qui peuvent vendre ces données(ex publicité ciblée)
+	2-Une conséquence de l'évolution technique
+		-La cryptographie est une conséquence de l'évolution, car quand les moyens de communication n'exsitaient pas, il était facile de savoir si quelqu'un écoutait notre conversation
+		-Indispensable maintenant avec internet et tout les hackers
+		-Un PC sans protection survit 20min sans être victime d'une intrusion
+	3-Besoin d'envoyer des messages chiffrés
+		-Sentiment de sécurité
+		-Envoyer des messages que personne ne peut intercepter et lire. Permet de garder des donées confidentielles
 
 II-La cryptographie au fil de l'histoire
-	1-les chiffres de cesar
-	2-
+	1-Le chiffres de cesar
+		-Moyen utilisé par césar pour trans
+	2-Enigma
+	3-Rsa et compagnie
 III-Les meilleures techniques de chiffrement
 	-Classement des techniques de la moins efficace à la plus efficace.
-	-Ici est mit en place une mise en scène avec Bob, Alice et Eve, puisqu'on est trois, avec un 	crypteur (envoyeyr), un décrypteur (destinataire),et un hackeur qui tente d'intercepter le 	message et de le décrypter à l'aide d'un programme.
+	-Ici est mit en place une mise en scène avec Bob, Alice et Eve, puisqu'on est trois, avec un crypteur (envoyeyr), un décrypteur (destinataire),et un hackeur qui tente d'intercepter le 	message et de le décrypter à l'aide d'un programme.
 	1-chiffrement polyalphabétique:
 		-Hisoire de la technique
-		-Démonstration de cryptage grâce au site, et décryptage en quelques secondes grâce 		au programme de décryptage.
+		-Démonstration de cryptage grâce au site, et décryptage en quelques secondes grâce au programme de décryptage.
 	2-Machine Enigma
 		-Contexte de la guerre mondiale
-		-Reconstitution de la machine avec une imprimante 3D, et simulation avec arduino 		relié à un ordinateur. Démonstration de chiffrement et essai de décryptage. 			Conclusion sur le fait que c'est très difficile à déchiffer, mais calcul et explication de 		la manière a procéder avec nombre de combinaisons possibles. Eventuellement relié 		au site...
+		-Reconstitution de la machine avec une imprimante 3D, et simulation avec arduino relié à un ordinateur. Démonstration de chiffrement et essai de décryptage. 			Conclusion sur le fait que c'est très difficile à déchiffer, mais calcul et explication de 		la manière a procéder avec nombre de combinaisons possibles. Eventuellement relié 		au site...
 	3-Chiffrement RSA
 		-Contexte et histoire
 		-Test de cryptage avec nombres premiers (multiplication de deux grands nombres), sur le site, et explication de l'utilité des nombres premiers dans ce système (le plus grand nombre premier à nos jours), et démonstration d'un programme calculant des nombres premiers plutot grands. En utilisant les nombres générés, test de chiffrement et tentative de décryptage avec un programme. Conclusion sur le fait que le temps de calcul est trop élevé et montrer que cette technique est sécurisée
