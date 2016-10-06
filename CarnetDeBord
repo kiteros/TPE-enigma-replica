@@ -1,0 +1,64 @@
+Carnet de bord
+TPE - Cryptographie
+Jules, Luc et Guillaume
+
+Lundi 5 septembre
+-Recherche du sujet de TPE, Jules propose la cryptographie qui est adoptée
+
+Lundi 12 septembre
+-Recherche d'information et création du plan
+-Création d'un site de cryptage/décryptage par Jules. Le site permettra de faciliter les échanges de messages cryptés pour
+Faire des démonstrations.
+Mercredi 14 septembre
+-Recherche d'information et amélioration du site. Ajout entre autre d'une base de données en PHP.
+
+Jeudi 15 septembre
+-Création programme python pour 
+trouver les nombres premiers par Guillaume. Ce premier programme aura pour but de faciliter la mise en place d'un programme de
+Cryptage utilisant la technologie RSA
+
+Vendredi 16 septembre
+-Amélioration du site(Ajout de la base de données internet, et
+hébergement du site sur OVH.com)
+
+Lundi 19 septembre
+-Amélioration du programme python et du plan. Le plan fini nous permet de nous organiser et de répartir équitablement la masse
+De travail.
+-Recherche d'information, nous essayons de comprendre en détail le systeme rsa qui est un incontournable de la cryptographie.
+-Création d'un système de décryptage automatique. En effet, Jules et Guillaume développent un programme d'abord en Java, puis en
+Python qui déterminer facilement la clé d'un message en testant toutes les possibilités et en les comparant à un 
+
+Mercredi 21 septembre 
+-Jules imprime en 3D un modèle de rotor de enigma trouve sur internet pour pouvoir avoir une vision plus globale du résultat final. On en conclue donc que cette pièce est trop petite et qu'il faut qu'on refasse nos propres pièces.
+
+Samedi 24 septembre
+-Ajout de messages privés et publics pour le site. Ces deux types de messages permettront de simuler une interception de message public.
+-Création d'un .exe pour le système de décryptage auto. p.-a.,
+et retranscription du programme python en c++. La solution optée est d'inclure Java dans l'exécutable à l'aide de jar2exe et donc d'avoir un programme pouvant s'ouvrir sur n'importe quel ordi.
+-Jules achete un livre qui nous permettra d'obtenir une masse d'informations supplémentaires.
+
+Lundi 26 septembre
+-Création pièces enigma. Luc dessine sur solid world les rotors en fonction de nos attentes.
+-Amélioration du plan. Développement de la partie historique en rapport avec l'évolution de la cryptographie
+-Recherche cryptage RSA. Guillaume code un programme simulant un cryptage rsa.
+
+Samedi 1 octobre
+-Jules imprime les supports de rotor dessinés le lundi pour avancer le travail de création de la machine.
+
+Lundi 3 octobre
+-Création pièces enigma
+-Ajout code RSA
+-Explication du fonctionnement général d'énigma
+
+Mardi 4 octobre
+-Recherche d'une solution pour connecter les rotors
+(Solution adoptée : connections a ressort )
+
+Mercredi 5 octobre
+-Création du carnet de bord en fonction des commits sur Github par Luc
+
+Jeudi 6 octobre
+-Jules commence à programmer l'interface utilisateur qui sera relié à la machine enigma à travers
+Un ordinateur. La solution adoptée est visual studio en c# qui offre une certaine souplesse, est multiplateforme, et dispose
+D'une connection serial qui est indispensable pour se connecter à un arduino.
+
