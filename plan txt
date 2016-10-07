@@ -1,37 +1,43 @@
-Plan du TPE sur la cryptographie :
+Introduction :
+Depuis toujours l'homme a voulu garder de la privacité et être a l'abri des regards indiscrects
 
-Problèmatique : pourquoi la cryptographie est-elle nécessaire, et comment a-t-elle évoluée ? 
+I-La cryptographie, pourquoi ?
+	
+	a-Privacité personnelle : garder ses données à l'abri. Transactions banquaires.
+	Une conséquence de l'évolutiojn technique. Un pc sans protection survit 20 min sans intrusions.
+	b-Privacité publique: Cia besoin d'être toujours plus performant que le concurrant en manière de cryptage. Avoir toujours la possibilité de garder des données éventuellement classées par un pays à l'abri des autres.
 
-I-La cryptographie de nos jours et sa nécéssité
-	1-Besoin de protection des données personnelles
-		-Pourquoi tout cacher quand ont à rien à cacher, si on a une vie banale
-		-La valeur de nos données personnelles, et les grandes entreprises qui peuvent vendre ces données(ex publicité ciblée)
-	2-Une conséquence de l'évolution technique
-		-La cryptographie est une conséquence de l'évolution, car quand les moyens de communication n'exsitaient pas, il était facile de savoir si quelqu'un écoutait notre conversation
-		-Indispensable maintenant avec internet et tout les hackers
-		-Un PC sans protection survit 20min sans être victime d'une intrusion
-	3-Besoin d'envoyer des messages chiffrés
-		-Sentiment de sécurité
-		-Envoyer des messages que personne ne peut intercepter et lire. Permet de garder des donées confidentielles
+II-Le concept de clé
+	a-description du chiffrement/déchiffrement simple
+		-La clé, quesque c'est ?
+		-Introduction des roles : Alice, Bob et Eve
+	b-Chiffrements par transposition ou substitution
+		-transposition : déplacement des lettres sans changer la nature du message(très faible)
+		-substitution : changement des lettres grace à une clé donnée(dépend du procédé) 
+	c-Chiffrements symétriques ou asymétriques
+		-Symétrique : utilise la même clé pour le cryptage et décryptage
+		-Asymétrique : utilise une clé publique et privée.
 
-II-La cryptographie au fil de l'histoire
-	1-Le chiffres de cesar
-		-Moyen utilisé par césar pour transporter des messages. César 
-	2-Enigma
-	3-Rsa et compagnie
-III-Les meilleures techniques de chiffrement
-	-Classement des techniques de la moins efficace à la plus efficace.
-	-Ici est mit en place une mise en scène avec Bob, Alice et Eve, puisqu'on est trois, avec un crypteur (envoyeyr), un décrypteur (destinataire),et un hackeur qui tente d'intercepter le 	message et de le décrypter à l'aide d'un programme.
-	1-chiffrement polyalphabétique:
-		-Hisoire de la technique
-		-Démonstration de cryptage grâce au site, et décryptage en quelques secondes grâce au programme de décryptage.
-	2-Machine Enigma
-		-Contexte de la guerre mondiale
-		-Reconstitution de la machine avec une imprimante 3D, et simulation avec arduino relié à un ordinateur. Démonstration de chiffrement et essai de décryptage. 			Conclusion sur le fait que c'est très difficile à déchiffer, mais calcul et explication de 		la manière a procéder avec nombre de combinaisons possibles. Eventuellement relié 		au site...
-	3-Chiffrement RSA
-		-Contexte et histoire
-		-Test de cryptage avec nombres premiers (multiplication de deux grands nombres), sur le site, et explication de l'utilité des nombres premiers dans ce système (le plus grand nombre premier à nos jours), et démonstration d'un programme calculant des nombres premiers plutot grands. En utilisant les nombres générés, test de chiffrement et tentative de décryptage avec un programme. Conclusion sur le fait que le temps de calcul est trop élevé et montrer que cette technique est sécurisée
-	4-Cryptographie quantique
-		-Evolution de cette technique et explication détaillée.
-		-Simulation sur ordinateur à l'aide d'un programme graphique des paramètres aléatoires qui caractérisent cette technique de cryptage.
-		-Test d'envoi de message crypté avec le site, décryptage et interception.
+III-Cryptographie au fil de l'histoire : 
+	a-César et ses techniques
+		-Substitution symétrique
+		-Démonstration d'une technique de cryptage polyalphabétique (chiffre de césar)
+		-Démonstration du décryptage est explication de la faiblaisse du procédé, par programme et analyse fréquentielle
+	b-Chiffre de Vigenere
+		-Substitution symétrique
+		-Démonstration sur le site de cryptage, d'interception et de décodage.
+	C-Machine enigma
+		-Explication du procédé, avec images, système de cryptage symétriqu
+		-Démonstration de cryptage de la machine avec envoi de méssage et reception de message
+		-Tentative de décryptage, et explication de l'impossibilité en fonction du nombre immense de possibilités.
+
+IV-Les techniques utilisées de nos jours
+	a-Techniques symétriques
+		-DES/AES
+	b-Techniques asymétriques
+		-Rsa : démonstration de cryptage, décryptage avec la table ascii.
+
+V-Le futur de la cryptographie : 
+	a-Une guerre pour le plus grand nombre premier(cryptage rsa)
+	b-Le cryptage quantique et la distribution aléatoire des clés. Ce système est très sécurisé.
+		-Tentative de simulation sur ordinateur de ce système.
