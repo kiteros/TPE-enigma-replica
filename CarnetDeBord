@@ -66,3 +66,7 @@ Vendredi 7 octobre
 -Jules change totalement le plan. Ona maintenant une approche historique introduisant plus en douceur les étapes de la cryptographie, ses passé,
 et ses évolutions.
 -Commencement aussi du dossier au propre à rendre
+
+Samedi 8 octobre : 
+-commencement et finition du code arduino. Testé sur un arduino uno avec 4 lettres, le programme fonctionne parfaitement.
+-Un logiciel développé en c# sur visual studio envoi les lettres tapées à l'arduino, qui renvoi les lettres codées.
