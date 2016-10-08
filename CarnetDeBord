@@ -70,3 +70,5 @@ et ses évolutions.
 Samedi 8 octobre : 
 -commencement et finition du code arduino. Testé sur un arduino uno avec 4 lettres, le programme fonctionne parfaitement.
 -Un logiciel développé en c# sur visual studio envoi les lettres tapées à l'arduino, qui renvoi les lettres codées.
+-Création d'un schéma, et résolution du problème d'entrée digitale. La solution était de connecter toutes les entrées de l'arduino au GND à travers une résistance de 10K.
+-Schéma uploadé sur github représentant les 26 lettres.
