@@ -72,3 +72,8 @@ Samedi 8 octobre :
 -Un logiciel développé en c# sur visual studio envoi les lettres tapées à l'arduino, qui renvoi les lettres codées.
 -Création d'un schéma, et résolution du problème d'entrée digitale. La solution était de connecter toutes les entrées de l'arduino au GND à travers une résistance de 10K.
 -Schéma uploadé sur github représentant les 26 lettres.
+
+Dimanche 9 octobre : 
+-Organisation entre jules et luc de l'avancée du TPE
+-Mise sur breadBoard du schéma fait la veille : ca marche!
+
