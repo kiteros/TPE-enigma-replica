@@ -77,3 +77,14 @@ Dimanche 9 octobre :
 -Organisation entre jules et luc de l'avancée du TPE
 -Mise sur breadBoard du schéma fait la veille : ca marche!
 
+Lundi 10 octobre :
+-Transfert du programme sur arduino mega, et fixation des objectifs du programme énigma. 
+-Début de la présentation sur Google slides.
+-Repensage des pièces de la machine enigma, et adaptation à la solution proposée : roulement a boule
+-Ajout d'une roue crantée sur le dessin pour pouvoir bouger les rotors à la main
+-Rectification d'une erreur de programme arduino qui empêchait au pins de l'arduino d'être utilisé comme entrée et sortie.
+
+Mardi 11 octobre : 
+-Création d'un schéma interactif expliquant le voyage d'une lettre à travers Enigma, sur la présentation.
+-Création d'un document résumant les choses a expliquer
+
