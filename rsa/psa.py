@@ -1,3 +1,4 @@
+from time import *
 # encoding: utf-8
 
 # L'utilisateur entre p
@@ -23,6 +24,17 @@ PGCD1 = 0
 # Notre e qui s'incrémentera
 e = 0
 
+# La fonction PGCD avec ses 2 arguments a et b
+# La fonction PGCD avec ses 2 arguments a et b
+def pgcd(a,b):
+    # L'algo PGCD
+    while a != b:
+        if a > b:
+            a = a - b
+        else:
+            b = b - a
+    return a;
+
 # Tant que PGCD de e et phi(n) différents de 1
 while PGCD1 != 1 :
     # Tant que compteur=0
@@ -35,22 +47,14 @@ while PGCD1 != 1 :
         e = e + 1
     # On récupère le résultat du pgcd    
     PGCD1 = pgcd(e,phiden)
+    print(PGCD1)
 
-# La fonction PGCD avec ses 2 arguments a et b
-def pgcd(a,b):
-    # L'algo PGCD
-    while a != b:
-        if a > b:
-            a = a - b
-        else:
-            b = b - a
-    return a;
 
 # On affiche notre clé publique
 print ("\nCle publique (",e,",",n,")")
 
 # On demande d'entrer le texte à chiffrer
-mot = raw_input('\nEntrez le mot ou la phrase à chiffrer : ')
+mot =input('\nEntrez le mot ou la phrase à chiffrer : ')
 
 # On récupère le nombre de caractères du texte.
 taille_du_mot = len(mot)
