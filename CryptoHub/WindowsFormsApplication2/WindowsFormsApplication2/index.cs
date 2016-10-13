@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication2
 {
-    public partial class plugboard : Form
+    public partial class index : Form
     {
-        public plugboard()
+        public index()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            pictureBox1.BackColor = Color.Black;
         }
     }
 }

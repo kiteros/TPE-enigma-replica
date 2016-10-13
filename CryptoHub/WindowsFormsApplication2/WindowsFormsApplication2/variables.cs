@@ -8,12 +8,19 @@ namespace WindowsFormsApplication2
 {
     public static class variables
     {
-        private static String[] liaisons;
-        public static String[] getLiaison(int l1, int l2)
+
+        private static List<string> liaisons = new List<string>();
+        //LettreA codée en LettreB (en int avec A=0)
+        public static List<string> getLiaison()
         {
             return liaisons;
         }
 
-        public
+        public static void addLiaison(int lettreA, int lettreB)
+        {
+            liaisons.Add(lettreA.ToString() + "-" + lettreB.ToString());
+        }
+
+        
     }
 }
