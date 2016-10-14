@@ -85,6 +85,16 @@ Lundi 10 octobre :
 -Rectification d'une erreur de programme arduino qui empêchait au pins de l'arduino d'être utilisé comme entrée et sortie.
 
 Mardi 11 octobre : 
--Création d'un schéma interactif expliquant le voyage d'une lettre à travers Enigma, sur la présentation.
+-Création d'un schéma interactif expliquant le voyage d'une lettre à travers Enigma, sur la présentation (par jules et Luc)
 -Création d'un document résumant les choses a expliquer
+
+Jeudi 13 octobre : 
+-Redéfinition des priorités pour chacun
+-Création d'un hub qui permettra de relier tout les programmes crées (Jules)
+-Documentation sur la bibliothèque 3d de visual studio
+
+Vendredi 14 octobre :
+-Finalisation du hub (jules)
+-Ajout du plugboard interactif (en cours de codage)
+
 
