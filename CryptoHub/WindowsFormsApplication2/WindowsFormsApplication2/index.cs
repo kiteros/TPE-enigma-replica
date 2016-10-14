@@ -16,5 +16,11 @@ namespace WindowsFormsApplication2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 p = new Form1();
+            p.Show();
+        }
     }
 }
