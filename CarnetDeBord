@@ -98,4 +98,7 @@ Vendredi 14 octobre :
 -Finalisation du hub (jules)
 -Ajout du plugboard interactif (en cours de codage)
 
-
+Samedi 15 octobre
+-Finition du plugboard interactif (4h de codage par Jules). 13 paires de lettres peuvent être reliées avec 
+10câbles, comme sur la vraie Enigma.
+-Intégration du plugboard dans les lettres codées sur arduino
