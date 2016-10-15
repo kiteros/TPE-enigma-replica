@@ -21,6 +21,16 @@ namespace WindowsFormsApplication2
             liaisons.Add(lettreA.ToString() + "-" + lettreB.ToString());
         }
 
+        public static void AddStringLiaison(String s)
+        {
+            liaisons.Add(s);
+        }
+
+        public static void clearList()
+        {
+            liaisons.Clear();
+        }
+
         
     }
 }

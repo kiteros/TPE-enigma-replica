@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Diagnostics;
+
+
 namespace WindowsFormsApplication2
 {
     public partial class index : Form
@@ -21,6 +24,18 @@ namespace WindowsFormsApplication2
         {
             Form1 p = new Form1();
             p.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://richpad.com/tpe/tpe/start.php");
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            rsa r = new rsa();
+            r.Show();
         }
     }
 }

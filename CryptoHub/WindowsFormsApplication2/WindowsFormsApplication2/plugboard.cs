@@ -12,11 +12,11 @@ namespace WindowsFormsApplication2
 {
     public partial class plugboard : Form
     {
-        private bool[] clicked = new bool[40];
-        private bool[] isBloked = new bool[40];
-        private CirclePanel[] panels = new CirclePanel[40];
-        private Label[] lettresText = new Label[40];
-        private Label[] liaisonsOk = new Label[20];
+        private bool[] clicked = new bool[52];
+        private bool[] isBloked = new bool[52];
+        private CirclePanel[] panels = new CirclePanel[52];
+        private Label[] lettresText = new Label[52];
+        
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         private int nbCLicksAffile = 0;
         private int nbLignesOk = 0;
@@ -24,12 +24,13 @@ namespace WindowsFormsApplication2
         private char secLettre;
         private Point dep;
         List<Ligne> touteLignes = new List<Ligne>();
-
+        List<String> touteLiaisons = new List<String>();
+        List<Label> toutLabels = new List<Label>();
         public plugboard()
         {
             InitializeComponent();
 
-            for (int x = 0; x < 20; x++)
+            for (int x = 0; x < 26; x++)
             {
                 panels[x] = new CirclePanel();
                 panels[x].Location = new Point(10 + 55 * x, 60);
@@ -49,10 +50,10 @@ namespace WindowsFormsApplication2
                 this.Controls.Add(lettresText[x]);
                 clicked[x] = false;
             }
-            for (int x = 20; x < 40; x++)
+            for (int x = 26; x < 52; x++)
             {
                 panels[x] = new CirclePanel();
-                panels[x].Location = new Point(10 + 55 * (x - 20), 300);
+                panels[x].Location = new Point(10 + 55 * (x - 26), 300);
                 panels[x].Size = new Size(50, 50);
                 panels[x].Name = x.ToString();
                 //panels[x].BackColor = Color.Black;
@@ -63,8 +64,8 @@ namespace WindowsFormsApplication2
 
                 this.Controls.Add(panels[x]);
                 lettresText[x] = new Label();
-                lettresText[x].Location = new Point(10 + 55 * (x - 20), 350);
-                lettresText[x].Text = alphabet[x - 20].ToString();
+                lettresText[x].Location = new Point(10 + 55 * (x - 26), 350);
+                lettresText[x].Text = alphabet[x - 26].ToString();
                 lettresText[x].AutoSize = true;
                 lettresText[x].Font = new Font(lettresText[x].Font.FontFamily, 35);
                 this.Controls.Add(lettresText[x]);
@@ -107,11 +108,11 @@ namespace WindowsFormsApplication2
                 clicked[valueOfPanel] = true;
                 if (nbCLicksAffile == 0)
                 {
-                    premLettre = alphabet[valueOfPanel % 20];
+                    premLettre = alphabet[valueOfPanel % 26];
                 }
                 else
                 {
-                    secLettre = alphabet[valueOfPanel % 20];
+                    secLettre = alphabet[valueOfPanel % 26];
                 }
 
                 nbCLicksAffile++;
@@ -119,20 +120,23 @@ namespace WindowsFormsApplication2
                 {
                     //Nouvelle liaison
                     nbCLicksAffile = 0;
-                    panels[alphabet.IndexOf(premLettre) + 20].WrongEllipse();
-                    isBloked[alphabet.IndexOf(premLettre) + 20] = true;
+                    panels[alphabet.IndexOf(premLettre) + 26].WrongEllipse();
+                    isBloked[alphabet.IndexOf(premLettre) + 26] = true;
                     panels[alphabet.IndexOf(secLettre)].WrongEllipse();
                     isBloked[alphabet.IndexOf(secLettre)] = true;
                     Point t = this.PointToClient(Cursor.Position);
                     Ligne ligne = new Ligne(dep, t);
                     touteLignes.Add(ligne);
 
-                    liaisonsOk[nbLignesOk] = new Label();
-                    liaisonsOk[nbLignesOk].Location = new Point(10, 450 + nbLignesOk * 15);
-                    liaisonsOk[nbLignesOk].AutoSize = true;
-                    liaisonsOk[nbLignesOk].Font = new Font(liaisonsOk[nbLignesOk].Font.FontFamily, 10);
-                    liaisonsOk[nbLignesOk].Text = premLettre.ToString() + "-" + secLettre.ToString();
-                    this.Controls.Add(liaisonsOk[nbLignesOk]);
+                    Label l = new Label();
+                    l.Location = new Point(10, 450 + nbLignesOk * 15);
+                    l.AutoSize = true;
+                    l.Font = new Font(l.Font.FontFamily, 10);
+                    l.Text = premLettre.ToString() + "-" + secLettre.ToString();
+                    toutLabels.Add(l);
+                    touteLiaisons.Add(l.Text);
+                    
+                    this.Controls.Add(toutLabels[nbLignesOk]);
                     nbLignesOk++;
                 }
 
@@ -158,6 +162,13 @@ namespace WindowsFormsApplication2
             }
         }
 
+        private void clearLignes()
+        {
+            System.Drawing.Graphics graphicsObj;
+            graphicsObj = this.CreateGraphics();
+            graphicsObj.Clear(Color.White);
+        }
+
         private void pan_MouseMove(object sender, EventArgs e)
         {
             if (nbCLicksAffile == 1)
@@ -168,31 +179,36 @@ namespace WindowsFormsApplication2
 
         }
 
-        //Entrée 1
-        /*
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            pictureBox1.BackColor = Color.DarkBlue;
-            clicked[1] = !clicked[1];
+            for(int x = 0; x < 52; x++)
+            {
+                clicked[x] = false;
+                panels[x].clearEllipse();
+                isBloked[x] = false;
+                
+            }
+            nbCLicksAffile = 0;
+            touteLignes.Clear();
+            touteLiaisons.Clear();
+            nbLignesOk = 0;
+            for(int x = 0; x < toutLabels.Count; x++)
+            {
+                this.Controls.Remove(toutLabels[x]);
+            }
+            toutLabels.Clear();
+            clearLignes();
         }
 
-        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            if (!clicked[1])
+            variables.clearList();
+            for (int x = 0; x < touteLiaisons.Count; x++)
             {
-                pictureBox1.BackColor = Color.Orange;
+                variables.AddStringLiaison(touteLiaisons[x]);
             }
+            this.Close();
         }
-
-        private void pictureBox1_MouseLeave(object sender, EventArgs e)
-        {
-            if (!clicked[1])
-            {
-                pictureBox1.BackColor = Color.White;
-            }
-            
-        }*/
-
     }
     public class CirclePanel : Panel
     {

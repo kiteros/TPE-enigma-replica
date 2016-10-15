@@ -19,3 +19,5 @@ C:\wamp64\www\crypto\CryptoHub\WindowsFormsApplication2\WindowsFormsApplication2
 C:\wamp64\www\crypto\CryptoHub\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
 C:\wamp64\www\crypto\CryptoHub\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
 C:\wamp64\www\crypto\CryptoHub\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Index.resources
+C:\wamp64\www\crypto\CryptoHub\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.error.resources
+C:\wamp64\www\crypto\CryptoHub\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.rsa.resources
