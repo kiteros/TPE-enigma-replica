@@ -1,9 +1,9 @@
 Carnet de bord
 TPE - Cryptographie
-Jules, Luc et Guillaume
+Guillaume, Luc et Jules
 
 Lundi 5 septembre
--Recherche du sujet de TPE, Jules propose la cryptographie qui est adoptée
+-Recherche du sujet de TPE, La cryptographie est choisie parmi une liste d'idées
 
 Lundi 12 septembre
 -Recherche d'information et création du plan
@@ -47,7 +47,7 @@ Samedi 1 octobre
 
 Lundi 3 octobre
 -Création pièces enigma
--Ajout code RSA
+-Premier test du programme Rsa en python par Guillaume
 -Explication du fonctionnement général d'énigma
 
 Mardi 4 octobre
@@ -82,6 +82,7 @@ Lundi 10 octobre :
 -Début de la présentation sur Google slides.
 -Repensage des pièces de la machine enigma, et adaptation à la solution proposée : roulement a boule
 -Ajout d'une roue crantée sur le dessin pour pouvoir bouger les rotors à la main
+-Avancement du programme RSA (Guillaume)
 -Rectification d'une erreur de programme arduino qui empêchait au pins de l'arduino d'être utilisé comme entrée et sortie.
 
 Mardi 11 octobre : 
@@ -124,9 +125,15 @@ Samedi 22 octobre
 Lundi 31 octobre 
 -Jules avance le Logiciel Enigma (câble interne des rotors)
 
-Mardi 1 septembre
+Mardi 1 novembre
 -Luc essaye de coder un programme pour coder et decoder vigenere
 
-Mercredi 2 septembre
+Mercredi 2 novembre
 -Luc a fini de faire le programme de codage/decodage 
 -Jules a fini la visualisation graphique des rotors (ils ne tournent pas encore mais ça va venir...)
+
+Dimanche 6 octobre
+-Guillaume termine le programme Rsa
+-Jules termine le logiciel Enigma (avec les rotors qui tournent)
+
+
