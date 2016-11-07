@@ -8,7 +8,7 @@ if choix==1:
     b = input("entrer la cle")
     a = ''.join(a.split())
 
-    if not b.isalpha() or a.isalpha() and( not ' ' in b or ' ' in a):
+    if not b.isalpha() or not a.isalpha():
         print("que des lettres")
 
     else:
@@ -32,6 +32,7 @@ elif choix==2:
     a = input("message a decoder")
     b = input("entrer la cle")
     a = ''.join(a.split())
+    
 
     if not b.isalpha() or not a.isalpha():
         print("que des lettres")
