@@ -67,6 +67,7 @@ if pqconnu == 0 :
 	
 	while compteur == 0:
 		# Les conditions vu ci-dessus :
+		
 		if((e * d % phiden == 1)and(p < d)and(q < d)and(d < phiden)):
 		    compteur = 1
 		d = d + 1
@@ -87,7 +88,7 @@ if pqconnu == 1 :
     phiden = (p-1)*(q-1)
 
     #On demande d
-    d = input("Entrez le nombre d : ")
+    d = int(input("Entrez le nombre d : "))
 	
 # On récupère le nombre de lettre crypté (soit des bloc de un caractère)
 i = int(input("Combien il y a de bloc :"))
