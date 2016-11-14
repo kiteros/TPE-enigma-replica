@@ -1,0 +1,120 @@
+import time
+from math import sqrt
+ 
+#J'utilise psycho pour plus de rapidité
+if __name__ == '__main__':
+    # Import Psyco if available
+    try:
+        import psyco
+        psyco.full()
+    except ImportError:
+        pass
+ 
+listep=[2,3]
+newlistep=[]
+n_a_tester=5
+print ("\n*** PREM'S V 1.0 ***\n")
+limite=int(input("Calculer jusqu'à : "))
+print()
+a=3
+ 
+def test (n_a_tester):
+    n_list=len(listep)
+    for i in range(n_a_tester):
+ 
+        if n_a_tester%listep[i]==0:
+            break
+        elif (i+1)==n_list or n_a_tester<listep[i]**2:
+            listep.append(n_a_tester)
+            return n_a_tester
+        elif n_a_tester%listep[i]!=0:
+            i+=1
+ 
+start=time.ctime()
+while a<limite :
+    test (n_a_tester)
+    n_a_tester+=1
+    a+=1
+finish=time.ctime()
+debut=(int(start[11]+start[12])*3600)+(int((start[14]+start[15]))*60)+int(start[17]+start[18])
+fin=(int(finish[11]+finish[12])*3600)+(int((finish[14]+finish[15]))*60)+int(finish[17]+finish[18])
+temps=fin-debut
+
+for i in range(5):
+    newlistep.append(listep[len(listep)-i-1])
+newlistep.reverse()
+# On écrit les nombres P
+nombre_prems=len(listep)
+nombre_prems=str(nombre_prems)
+print("\nTemps du calcul : environ",temps,"sec")
+print("\nNombre de NP trouvés :", nombre_prems)
+print('\nVoici les 5 derniers :\n')
+for i in range(5):
+    print('-',newlistep[i])
+print()
+print ("pour voir la liste complète des NP, tapez 'listep', puis valider\n")
+
+input()
+
+
+#ecriture du programme de verification des 2 nombre premier
+
+print('Le programme va verifier si les 2 nombres premiers choisis sont utilisable pour le programme de chiffrement RSA.')
+p=int(input('Entrez le premier nombre premier : '))
+q=int(input('Entrez le second nombre premier : '))
+
+#verification de la compatibilité
+
+def pgcd(a,b):
+    # L'algo PGCD
+    while a != b:
+        if a > b:
+            a = a - b
+        else:
+            b = b - a
+    return a;
+phiden = (p-1)*(q-1)
+n=p*q
+#variable de la boucle
+compteur=0
+PGCD1=0
+e=0
+ 
+
+
+while PGCD1 != 1 :
+    # Tant que compteur=0
+    while compteur == 0 :   
+        # Si p inférieur à e et si q inférieur à e et si e inférieur à n
+        if((p < e)and(q < e)and(e < phiden)) :
+            # La boucle se coupe (on peut aussi mettre le mot-clé : break
+            compteur = 1     
+        # Tant que rien n'est trouvé, e s'incrémente
+        e = e + 1
+    # On récupère le résultat du pgcd   
+    PGCD1 = pgcd(e,n)
+
+compteur = 0 
+d=0
+
+while compteur == 0:
+    # Les conditions vu ci-dessus :
+		
+    if((e * d % phiden == 1)and(p < d)and(q < d)and(d < phiden)):
+        compteur = 1
+    d = d + 1
+
+    if d>10000000:
+        print('Les nombres premiers "p" et "q" ne sont pas compatible')
+        compteur = 1
+if d<10000000:
+    print('Les nombre premiers "p" et "q" sont compatible')
+    compteur = 1
+
+
+
+
+
+# affichage de la cléé privéé
+
+print('clée privée = ( ',d,',',n,')')
