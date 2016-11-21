@@ -63,7 +63,7 @@ Un ordinateur. La solution adoptée est visual studio en c# qui offre une certai
 D'une connection serial qui est indispensable pour se connecter à un arduino.
 
 Vendredi 7 octobre
--Jules change totalement le plan. Ona maintenant une approche historique introduisant plus en douceur les étapes de la cryptographie, ses passé,
+-changement total le plan. Ona maintenant une approche historique introduisant plus en douceur les étapes de la cryptographie, ses passé,
 et ses évolutions.
 -Commencement aussi du dossier au propre à rendre
 
@@ -153,3 +153,8 @@ Lundi 14 novembre
 Jeudi 17 novembre
 -Ajout de schéma sur la cryptographie quantique
 -modélisation du boitier des leds
+
+Lundi 21 novembre 
+-Programme de chiffrement RSA opérationnel par guillaume
+-programme de verfification de clée RSA operationnel par guillaume
+-commencement de la parti graphique rassemblmant out les programmes concernant RSA par guillaume
