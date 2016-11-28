@@ -177,4 +177,18 @@ Vendredi 25 novembre :
 -Modélisation et impression du logo d'énigma
 -Impression de la partie 2 du boîtier
 
-Vendredi
+Samedi 26 novembre :
+-Impression d'un rotor utilisant la nouvelle technique mise au point (bandelettes conductrices à l'extérieur du rotor)
+
+Dimanche 27 novembre : 
+-Impression des deux autres parties du rotor manquant, et assemblage sur un tourvevis
+-Récupération dans une vielle radio d'un interrupteur pour le mettre à l'arrière d'énigma.
+-Collage d'une led témoin pour l'activité du système
+
+Lundi 28 novembre : 
+-Essai des rotors avec la méthode à bille : Résultat peu concluant. Les billes ne tiennent pas en place, et le mouvement des rotors est impossible.
+-Guillaume avance son programme Rsa graphique et écrit une partie de la parie sur Rsa dans le dossier
+-Jules assemble le boitier final, fixe l'arduino mega à l'intérieur à l'aide d'une petit vis, et colle les breadboard avec 28 résistances de 260 ohm pour les leds,
+-Collage du logo d'enigma sur la paroi du boitier
+-Guillaume et Jules soudent quelques leds, et soudent l'interrupteur pour allumer la machine.
+-Luc s'occupe de serrer les rotors, et de trouver une bonne force sur le ressort
