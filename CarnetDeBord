@@ -153,7 +153,7 @@ Lundi 14 novembre
 Jeudi 17 novembre
 -Ajout de schéma sur la cryptographie quantique
 -modélisation du boitier des leds
-
+29
 Lundi 21 novembre 
 -Programme de chiffrement RSA opérationnel par guillaume
 -programme de verfification de clée RSA operationnel par guillaume
@@ -192,3 +192,18 @@ Lundi 28 novembre :
 -Collage du logo d'enigma sur la paroi du boitier
 -Guillaume et Jules soudent quelques leds, et soudent l'interrupteur pour allumer la machine.
 -Luc s'occupe de serrer les rotors, et de trouver une bonne force sur le ressort
+
+Mardi 29 novembre : 
+-Collage des leds sur le boitier
+
+Mercredi 30 novembre : 
+-Jules soude des masses des leds, 2 par 2
+
+Jeudi 1 décembre :
+-Luc soude toutes les masses ensemble
+-Premier test de cablâge général avec des câbles femelle : echec, tout se désagrège (Guillaume & Jules)
+
+Vendredi 2 décembre :
+-Jules soude tout les câbles ensemble, et les relie à l'arduino
+-Le boitier est terminé!
+
