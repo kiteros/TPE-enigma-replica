@@ -207,3 +207,9 @@ Vendredi 2 décembre :
 -Jules soude tout les câbles ensemble, et les relie à l'arduino
 -Le boitier est terminé!
 
+Lundi 5 décembre : 
+-Jules résoud quelques problèmes de branchement dans le boitier, et améliore le code arduino en y ajoutant des effets de lumière,
+Explication de l'utilisation de visual studio à Guillaume pour coder le programme Rsa.
+-Luc démonte le rotor prototype d'Enigma pour récupérer les pièces qui seront utilisées par le nouveau prototype. Il décrit aussi
+le processus de fabriquation du boitier sur le document rédigé, à l'aide de photos.
+-Guillaume essaie de transférer son programme Rsa sur Visual Studio de Python vers c#
