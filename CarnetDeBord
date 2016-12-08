@@ -213,9 +213,15 @@ Explication de l'utilisation de visual studio à Guillaume pour coder le program
 -Luc démonte le rotor prototype d'Enigma pour récupérer les pièces qui seront utilisées par le nouveau prototype. Il décrit aussi
 le processus de fabriquation du boitier sur le document rédigé, à l'aide de photos.
 -Guillaume essaie de transférer son programme Rsa sur Visual Studio de Python vers c#
+
  Mardi 6 décembre :
  (Jules):rédaction de la partie sur la cryptographie quantique 
  
  Mercredi 7 décembre :
  (Jules):continuité de la rédaction 
  -test du nouveau type de rotor avec contact extérieur avec des cosses métalliques 
+
+Jeudi 8 décembre : 
+-Jules calcule à l'aide des factoriels le nombre de possibilités de câbler 10 câbles dans le plugboard de Enigma
+-Envisagement de créer une machine encore plus sécurisée que Enigma...
+
