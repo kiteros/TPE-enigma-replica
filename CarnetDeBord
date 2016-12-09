@@ -225,3 +225,7 @@ Jeudi 8 décembre :
 -Jules calcule à l'aide des factoriels le nombre de possibilités de câbler 10 câbles dans le plugboard de Enigma
 -Envisagement de créer une machine encore plus sécurisée que Enigma...
 
+Vendredi 9 décembre :
+-Jules crée des graphiques montrant l'évolution des arrangements du plugboard en fonction du nombre de câbles, et en fonction
+du nombre de lettres. Démonstration que par exemple ajouter 3 câbles et 3 chiffres multiplie le nombre de possibilités par plus de 2000!
+
