@@ -262,4 +262,20 @@ Mercredi 4 décembre :
 
 Samedi et dimanche du 8 décembre:
 -Guillaume et Jules résolvent un bug de RSA
--Jules rédige la partie sur comment décrypter Enigma sans la clé
+-Jules rédige la partie sur comment décrypter Enigma sans la clé(bomb)
+
+semaine du 9 janvier
+-Jules redige la partie sur la cryptographie quantique
+-jules ajoute des cables de sorties a enigma
+-luc redige vigenaire et masque
+-guillaume decoupe rsa dn blocks pour casser lanalyse frequentielle
+-nous imprimon un nouveau rotor
+
+semaine du 16 janvier
+-jules ermine quasiment le diapo
+-jules et luc montent les nouveaux rotors:ils marche't, mais sans contact elec
+-guillaume trojvr un fonction dexponentiztion modulaire
+-jules et luc font un schema de ce nous allons garder a loral
+
+
+
